@@ -10,7 +10,7 @@ app = FastAPI()
 
 # Add CORS middleware
 origins = [
-    "https://pneumoscan-jb71.onrender.com",  # React app
+    "https://pneumoscanai.onrender.com",  # React app
     # add more origins if needed
 ]
 
