@@ -91,10 +91,14 @@ const PredictComponent = () => {
                                 The model estimates a <b> {positive * 100}% </b> probability that the X-ray shows signs of pneumonia, and a <b> {negative * 100}% </b> probability that it does not show any signs of pneumonia.
                             </p>
                         </div>
-                    ) : null /* Do not display initial message when loading */}
-                        
-
-                    </div>
+                    ) : (
+                        !loading && (
+                            <div className='my-4 analysis'>
+                                {/* Display initial message when no image is uploaded */}
+                                <p>The model is ready to analyze your X-ray image. <i> See example above. </i></p>
+                            </div>
+                        )
+                    )}                    </div>
 
                 </div>
             </div>
