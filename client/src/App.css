@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; /* Remove default body margin */
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+
+/* NAVBAR */
+.nav, .logo i, .logo{
+    transition: .3s;
+  }
+  
+  .nav:hover, .logo i:hover{
+    color: #0277B5 !important;
+  }
+  
+  .logo:hover {
+    transform: scale(1.2); /* You can adjust the scale factor as needed */
+  }
+  
+@media screen and (max-width:600px) {
+  .name{
+    font-size: 50px !important;
+  }
+  
+}
